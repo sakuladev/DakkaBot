@@ -34,10 +34,11 @@
             // 
             // btnActivate
             // 
-            this.btnActivate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnActivate.Location = new System.Drawing.Point(12, 405);
+            this.btnActivate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnActivate.Location = new System.Drawing.Point(12, 327);
             this.btnActivate.Name = "btnActivate";
-            this.btnActivate.Size = new System.Drawing.Size(731, 23);
+            this.btnActivate.Size = new System.Drawing.Size(560, 23);
             this.btnActivate.TabIndex = 0;
             this.btnActivate.Text = "Activate";
             this.btnActivate.UseVisualStyleBackColor = true;
@@ -45,24 +46,25 @@
             // 
             // txtLog
             // 
-            this.txtLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.txtLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLog.Location = new System.Drawing.Point(12, 12);
             this.txtLog.Name = "txtLog";
-            this.txtLog.Size = new System.Drawing.Size(731, 387);
+            this.txtLog.Size = new System.Drawing.Size(560, 309);
             this.txtLog.TabIndex = 1;
             this.txtLog.Text = "";
             // 
-            // frmMainWindow
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 440);
+            this.ClientSize = new System.Drawing.Size(584, 362);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.btnActivate);
-            this.Name = "frmMainWindow";
+            this.MinimumSize = new System.Drawing.Size(600, 400);
+            this.Name = "MainWindow";
             this.Text = "Main";
             this.ResumeLayout(false);
 
