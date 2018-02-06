@@ -1,6 +1,6 @@
-﻿namespace DakkaBot
+﻿namespace DakkaBot.Forms
 {
-    partial class frmMainWindow
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -34,16 +34,21 @@
             // 
             // btnActivate
             // 
-            this.btnActivate.Location = new System.Drawing.Point(320, 405);
+            this.btnActivate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnActivate.Location = new System.Drawing.Point(12, 405);
             this.btnActivate.Name = "btnActivate";
-            this.btnActivate.Size = new System.Drawing.Size(75, 23);
+            this.btnActivate.Size = new System.Drawing.Size(731, 23);
             this.btnActivate.TabIndex = 0;
-            this.btnActivate.Text = "button1";
+            this.btnActivate.Text = "Activate";
             this.btnActivate.UseVisualStyleBackColor = true;
             this.btnActivate.Click += new System.EventHandler(this.btnActivate_Click);
             // 
             // txtLog
             // 
+            this.txtLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLog.Location = new System.Drawing.Point(12, 12);
             this.txtLog.Name = "txtLog";
             this.txtLog.Size = new System.Drawing.Size(731, 387);
