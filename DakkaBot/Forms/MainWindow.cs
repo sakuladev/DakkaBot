@@ -15,17 +15,16 @@ namespace DakkaBot.Forms
 
         public void AddLogMessage(string message)
         {
-            var logLinePrefix = $"[{DateTime.Now.ToString("hh:mm:ss")}] ";
-            var logLine = new StringBuilder();
-            logLine.Append(logLinePrefix);
-            logLine.Append(message);
-            logLine.AppendLine(Environment.NewLine);
-
             if(InvokeRequired)
             {
                 Invoke(new Action<string>(AddLogMessage), new object[] { message });
                 return;
             }
+
+            var logLinePrefix = $"[{DateTime.Now.ToString("HH:mm:ss")}] ";
+            var logLine = new StringBuilder();
+            logLine.Append(logLinePrefix);
+            logLine.AppendLine(message);
 
             MessageLog += logLine.ToString();
         }
